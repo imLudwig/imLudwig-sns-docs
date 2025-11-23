@@ -2,7 +2,7 @@ import { getSidebar } from "vitepress-plugin-auto-sidebar";
 
 export default {
   base: "/",
-  title: "DOCS",
+  title: "SNS-DOCS",
   description: "Docs damit Dusk und Callahan nicht mich fragen",
   lastUpdated: true,
   cleanUrls: true,
@@ -27,7 +27,7 @@ export default {
       pattern: "https://github.com/imLudwig/sns-docs/edit/main/docs/:path",
       text: "auf GitHub bearbeiten",
     },
-    siteTitle: "SNS-Docs",
+    siteTitle: "Docs",
     outline: "deep",
     nav: [
       // { text: "Get Started", link: "/getstarted" },
