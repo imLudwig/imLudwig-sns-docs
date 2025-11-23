@@ -8,7 +8,7 @@ Sie wird über einen **standardmäßigen Lua-Ereignismechanismus** ausgelöst, t
 
 ### Voraussetzungen
 
-**Wichtiger Hinweis:** Vor dem Senden **muss** die `charId` des Empfängers mit einem `telegram_id`-Eintrag in der Datenbanktabelle `visn_telegram_characters` verknüpft sein, damit die Nachricht korrekt zugestellt werden kann. **Wenn keine TelegrammId vorhanden ist, wird das Telegramm nicht gesendet.** 
+**Wichtiger Hinweis:** Vor dem Senden **muss** die `charId` des Empfängers mit einem `telegram_id`-Eintrag in der Datenbanktabelle `visn_telegram_characters` verknüpft sein, damit die Nachricht korrekt zugestellt werden kann. **Wenn keine TelegrammId vorhanden ist, wird das Telegramm nicht gesendet.**
 
 ---
 
@@ -56,4 +56,5 @@ end
 -- Beispiel-Aufruf zum Senden des Telegramms
 sendeKontoauszug(12345)
 ```
+
 
