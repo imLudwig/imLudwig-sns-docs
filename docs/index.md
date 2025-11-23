@@ -4,9 +4,9 @@ title: Home
 # Hero section
 hero:
   name: SNS-Docs
-  text: SNS-Documentation
+  text: by Ludwig
   image:
-    src: /logo.svg
+    src: /favicon.png
     alt: Logo
   tagline: Dokumentation zur Nutzung von Serversystemenen durch GD und Developement auf dem RedM Projekt &"Saints & Sinners"
   actions:
