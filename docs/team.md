@@ -16,7 +16,7 @@ const developers = [
         {
         avatar: 'https://avatars.githubusercontent.com/u/184827756?v=4',
         name: 'Ludwig',
-        title: 'Developer',
+        title: 'Head-Developer',
         links: [
             { icon: 'github', link: 'https://github.com/imLudwig' },
         ]
@@ -32,9 +32,17 @@ const developers = [
      {
         avatar: 'https://avatars.githubusercontent.com/u/10331752?v=4',
         name: 'Roschy',
-        title: 'Developer',
+        title: 'Developer & Mentor',
         links: [
             { icon: 'github', link: 'https://github.com/JulianLegler' },
+        ]
+    },
+   {
+        avatar: 'https://avatars.githubusercontent.com/u/69167497?v=4',
+        name: 'Lucas',
+        title: 'Möchtegern-Developer',
+        links: [
+            { icon: 'github', link: 'https://github.com/jackdawxs' },
         ]
     }
 ]
@@ -43,11 +51,19 @@ const specialThanks = [
     {
         avatar: 'https://avatars.githubusercontent.com/u/10902965?v=4',
         name: 'Bytesizd',
-        title: 'Docs Boilerplate creator',
+        title: 'Ersteller des Docs-Boilerplat',
         links: [
             { icon: 'github', link: 'https://github.com/AndrewR3K' },
         ]
-    }
+    },
+  {
+        avatar: 'https://avatars.githubusercontent.com/u/76929464?v=4',
+        name: 'gamingApple',
+        title: 'Systemadministrator',
+        links: [
+            { icon: 'github', link: 'https://github.com/gamingapple' },
+        ]
+    },
 ]
 
 
@@ -55,19 +71,19 @@ const specialThanks = [
 
 <VPTeamPage>
   <VPTeamPageTitle>
-    <template #title>Our Team</template>
-    <template #lead>Meet the people who make this project happen.</template>
+    <template #title>Unser Team</template>
+    <template #lead>Lerne das technische Rückrad des Projektes kennen.</template>
   </VPTeamPageTitle>
 
   <VPTeamPageSection>
-    <template #title>Developers</template>
+    <template #title>Developer</template>
     <template #members>
      <VPTeamMembers size="medium" :members="developers" />
     </template>
   </VPTeamPageSection>
 
   <VPTeamPageSection>
-    <template #title>Special Thanks</template>
+    <template #title>Danksagungen</template>
     <template #members>
      <VPTeamMembers size="medium" :members="specialThanks" />
     </template>
