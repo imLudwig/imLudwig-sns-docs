@@ -1,48 +1,42 @@
 name: Deploy Site
 
 on:
-  workflow_dispatch: {}
-  push:
-    branches:
-      - main
-jobs:
-  # Added a 'contents: read' permission here for security
-  build-and-deploy: # Renamed job for clarity
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+
+jobs: 
+  build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: read # 👈 Best practice for checkout action
+      contents: read 
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      # Updated to use v4 (latest stable)
       - uses: actions/checkout@v4 
         with:
           fetch-depth: 0
-      
-      # Updated to use v4 and a modern Node version (20 is LTS)
+          
       - uses: actions/setup-node@v4 
         with:
-          node-version: 20 # 👈 Recommended Node 20 LTS
+          node-version: 20
           cache: npm
           
-      # Used the shorter install command
       - run: npm install 
 
       - name: Build
         run: npm run docs:build
-      
-      # Updated to use v5 (latest stable)
+        
       - uses: actions/configure-pages@v5 
 
-      # Updated to use v3 (latest stable)
       - uses: actions/upload-pages-artifact@v3 
         with:
           path: docs/.vitepress/dist
           
       - name: Deploy
         id: deployment
-        # Updated to use v4 (latest stable)
         uses: actions/deploy-pages@v4
