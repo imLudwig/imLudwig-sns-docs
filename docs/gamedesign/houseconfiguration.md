@@ -4,9 +4,9 @@ Bitte übermittle dem Development die folgende **Lua-Tabelle** mit allen ausgef�
 
 -----
 
-## 💻 Codebeispiel (mit ausgerichteten Kommentaren)
+## 💻 Codebeispiel
 
-Bitte verwende dieses Format, um eine **maximale Übersichtlichkeit** zu gewährleisten.
+Bitte verwende dieses Format, wenn du dir noch unsicher bist was die einzelnen Werte bedeuten.
 
 ```lua
 {
