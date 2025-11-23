@@ -6,7 +6,7 @@
 
 ### Get a Random Cat
 
-`GET` `https://cataas.com/cat`
+`GET` `https://cataas.com/cat` 
 
 
 ### Get a Random Cat with Text
