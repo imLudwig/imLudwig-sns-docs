@@ -7,7 +7,7 @@ title: Dev-Docs
 
 ## Einführung in das Gamedesign
 
-Willkommen im Game Design-Bereich! Dieses Team ist das **kreative Herzstück** und verantwortlich für die **Konzeption, Gestaltung und Balancierung** des gesamten Spielerlebnisses.
+Willkommen im Game Design-Bereich! Dieser Bereicht ist verantwortlich für die **Konzeption, Gestaltung und Balancierung** der Mechaniken für unser Projekt.
 
 ---
 
@@ -16,16 +16,15 @@ Willkommen im Game Design-Bereich! Dieses Team ist das **kreative Herzstück** u
 Wir definieren, wie sich das Spiel anfühlt und funktioniert. Unsere Kernaufgaben sind:
 
 * **Konzept & Systemdesign:** Entwurf aller Spielregeln, der Progression und der Wirtschaftssysteme.
-* **Player Experience (PX):** Sicherstellen, dass das Spiel motivierend, fair und intuitiv ist.
+* **Player Experience:** Sicherstellen, dass das Spiel motivierend, fair und intuitiv ist.
+* **Support:** Nachhalten von Systemen wie Housing, Doorlocks und Shops.
+
+**Kurz gesagt:** Das Game Design definiert das **WAS** und das **WIE**.
 
 ### Zweck dieser Dokumentation
 
-Die hier gesammelten Dokumente sind das **verbindliche Handbuch** für alle Teams. Sie dienen dazu:
-
-* **Die Vision zu festigen:** Sie halten die finalen Designentscheidungen fest.
-* **Klarheit zu schaffen:** Sie spezifizieren detailliert, *wie* ein Feature funktionieren soll (die Blaupause für die technische Umsetzung).
-* **Konsistenz zu gewährleisten:** Sie sichern die Einheitlichkeit von Mechaniken und Spielgefühl über alle Updates hinweg.
+Die hier gesammelten Dokumente sollen das Handbuch ergänzen um die Arbeit für alle zu erleichtern. es soll **Konsistenz gewährleisten** um Configs besser bearbeiten zu können oder Beispiele zum Kopieren für das Team bereitzustellen.
 
 ---
 
-**Kurz gesagt:** Das Game Design definiert das **WAS** und das **WARUM**.
+
