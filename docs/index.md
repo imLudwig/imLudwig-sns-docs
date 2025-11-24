@@ -8,7 +8,7 @@ hero:
   image:
     src: /favicon.png
     alt: Logo
-  tagline: Dokumentation zur Nutzung von Serversystemenen durch GD und Developement auf dem RedM Projekt &"Saints & Sinners"
+  tagline: Dokumentation zur Nutzung von Serversystemenen durch GD und Developement auf dem RedM Projekt "Saints & Sinners"
   actions:
     - theme: brand
       text: Dokumentation
@@ -19,16 +19,16 @@ hero:
 
 # Features section
 features:
-  - icon: ⚡️
-    title: Fully static yet still dynamic
-    details: Go wild with true SSG + SPA architecture. Static on page load, but engage users with 100% interactivity from there.
-  - icon: 🎉
-    title: Designed to be simplicity first
-    details: With Markdown-centered content, it's built to help you focus on writing and deployed with minimum configuration.
-  - icon: 🔥
-    title: Power of Vue meets Markdown
-    details: Enhance your content with all the features of Vue in Markdown, while being able to customize your site with Vue.
-
+  - icon: ⚙️
+    title: Ressourcen-Überblick & APIs
+    details: Schneller Zugriff auf die Dokumentation aller relevanten Server-Ressourcen (Scripts) und ihrer öffentlichen APIs, um effizient neue Features zu implementieren oder bestehende anzupassen.
+  - icon: 🧑‍💻
+    title: Gamedesign-Workflow
+    details: Klare Anleitungen und Best Practices für Gamedesigner zur Nutzung von Server-Commands, Konfigurationsdateien und Tools zur Erstellung, Anpassung und Verwaltung von Inhalten.
+  - icon: 💪
+    title: Ludwig kann flexxen mit seinen Systemen
+    details: Frag mich was für Skripte. einfach ? einfach ? einfach Ludwigs skripte !
+    
 # Meta property
 head:
   - - meta
