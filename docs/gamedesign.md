@@ -1,3 +1,8 @@
+---
+layout: doc
+title: Dev-Docs
+---
+
 # Gamedesign
 
 ## Einführung in das Gamedesign
