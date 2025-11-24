@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Dokumentation
+title: Dev-Docs
 ---
 
 # Docs
