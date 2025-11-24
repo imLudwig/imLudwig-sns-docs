@@ -4,7 +4,7 @@ Der Itemchanger ermöglicht es Spielern gewisse Items umzubennen, mit neuen labe
 
 Items können Joblocked werden und die Bilder müssen vorgegeben werden. 
 
-<p style="color: #ff7340; border: 1px solid rgba(255, 135, 23, 0.25); border-radius:5px; padding: 1rem;">Bilder funktionieren nur wenn es ein zugehöriges Item gibt, falls du das Item anlegen musst nutze die bereitgestellt SQL. <br> <br> auch kommas dürfen zwischen den Items nicht fehlen.</p>
+<p style="color: #ff7340; border: 1px solid rgba(255, 135, 23, 0.25); border-radius:5px; padding: 1rem;">Bilder funktionieren nur wenn es ein zugehöriges Item gibt, falls du das Item anlegen musst, nutze die bereitgestellt SQL. <br> <br> Auch Kommatas dürfen zwischen den Items nicht fehlen.</p>
 
 ## Beispielcode: 
 
