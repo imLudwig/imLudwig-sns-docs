@@ -18,7 +18,7 @@ Diese Funktion startet den gesamten Dietrich-Vorgang (Voraussetzung, Animation, 
 
 | Parameter | Typ | Beschreibung |
 | :--- | :--- | :--- |
-| `difficultyMultiplyer` | `number` | **Schwierigkeits-Multiplikator.** Ein Wert, der die Basis-Schwierigkeit des Minispiels skaliert. Höhere Werte (z.B. `1.3`) erhöhen die Herausforderung. häufige werte: 0.5, 0.9, 1, 1.3 |
+| `difficultyMultiplyer` | `number` | **Schwierigkeits-Multiplikator.** Ein Wert, der die Basis-Schwierigkeit des Minispiels skaliert. Höhere Werte (z.B. `1.3`) erhöhen die Herausforderung. häufige werte: `0.5`, `0.9`, `1`, `1.3` |
 | `callback` | `function` | **Callback-Funktion.** Eine erforderliche Funktion, die nach dem Ende des Minispiels (Erfolg oder Misserfolg) aufgerufen wird. |
 
 ### 2.1. Rückgabewert und Callback-Signatur
