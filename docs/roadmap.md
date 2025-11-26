@@ -3,104 +3,106 @@ layout: page
 title: Roadmap
 ---
 
-# 🛣️ Offizielle Entwicklungs-Roadmap
+# 📅 Unsere Produkt-Roadmap (HTML/CSS)
 
-Dies ist der aktuelle Stand unserer geplanten und abgeschlossenen Features.
+<div class="simple-roadmap">
 
-<script setup>
-// 1. Die zentrale Datenstruktur für die Timeline
-const timelineEvents = ref([
-    { title: 'Projektstart und Basis-Setup', date: 'Q3 2025', status: 'Abgeschlossen' },
-    { title: 'Dark Mode Implementierung', date: 'Q4 2025', status: 'In Arbeit' },
-    { title: 'Überarbeitung der Navigation', date: 'Q1 2026', status: 'Geplant' },
-    { title: 'Integration eines neuen Tools', date: 'Q2 2026', status: 'Geplant' },
-    { title: 'Feature-Idee X', date: 'Zukunft', status: 'Idee' },
-])
-
-// 2. Hilfsfunktion zur Zuweisung einer CSS-Klasse basierend auf dem Status
-const getClass = (status) => {
-    switch (status) {
-        case 'Abgeschlossen': return 'status-done';
-        case 'In Arbeit': return 'status-wip';
-        default: return 'status-planned';
-    }
-}
-</script>
-
-<div class="simple-timeline">
-    <div v-for="event in timelineEvents" :key="event.title" class="timeline-event">
-        <div class="timeline-dot" :class="getClass(event.status)"></div>
-        
-        <div class="timeline-content">
-            <span class="timeline-date">{{ event.date }}</span>
-            <h3 class="event-title">{{ event.title }}</h3>
-            <p class="event-status">Status: **{{ event.status }}**</p>
-        </div>
+  <div class="roadmap-item done">
+    <div class="item-date">Q3 2025</div>
+    <div class="item-content">
+      <h3>Projektstart und Setup</h3>
+      <p>Status: **Abgeschlossen**</p>
     </div>
+  </div>
+
+  <div class="roadmap-item wip">
+    <div class="item-date">Q4 2025</div>
+    <div class="item-content">
+      <h3>Dark Mode Implementierung</h3>
+      <p>Status: **In Arbeit**</p>
+    </div>
+  </div>
+
+  <div class="roadmap-item planned">
+    <div class="item-date">Q1 2026</div>
+    <div class="item-content">
+      <h3>Überarbeitung der Navigation</h3>
+      <p>Status: **Geplant**</p>
+    </div>
+  </div>
+
+  <div class="roadmap-item idea">
+    <div class="item-date">Q2 2026</div>
+    <div class="item-content">
+      <h3>Integration eines neuen Tools</h3>
+      <p>Status: **Idee**</p>
+    </div>
+  </div>
+
 </div>
 
 <style scoped>
-/* Scoped CSS sorgt dafür, dass diese Stile nur die Timeline in dieser Datei betreffen */
+/* Verwenden Sie scoped, um Konflikte zu vermeiden */
 
-.simple-timeline {
+.simple-roadmap {
     position: relative;
-    padding-left: 20px; 
-    /* Vertikale Linie: Die Hauptlinie der Zeitleiste */
+    padding-left: 30px; /* Platz für die Linie und die Punkte */
+    /* Die Hauptlinie der Zeitleiste */
     border-left: 3px solid var(--vp-c-divider-light);
 }
 
-.timeline-event {
+.roadmap-item {
     position: relative;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 40px;
+    padding-left: 20px;
 }
 
-.timeline-dot {
+/* Der Zeitleisten-Punkt wird mit ::before erzeugt */
+.roadmap-item::before {
+    content: '';
     position: absolute;
-    left: -11px; /* Positioniert den Punkt auf der Linie */
+    left: -18.5px; /* Muss auf der Linie positioniert werden */
     top: 5px;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    /* Der Punkt wird durch die Status-Klassen gefärbt */
-    background-color: var(--vp-c-bg-alt); 
-    border: 3px solid var(--vp-c-bg); /* Rand, der den Punkt vom Inhalt abhebt */
+    background-color: var(--vp-c-bg); /* Hintergrundfarbe des Punktes */
+    border: 3px solid; /* Wird später von der Status-Klasse gefärbt */
     z-index: 10;
 }
 
-/* Zustandsfarben (verwenden VitePress Farb-Variablen) */
-.status-done {
-    background-color: var(--vp-c-green-1); /* Grün für abgeschlossen */
-    border-color: var(--vp-c-green-1);
-}
-.status-wip {
-    background-color: var(--vp-c-yellow-1); /* Gelb für in Arbeit */
-    border-color: var(--vp-c-yellow-1);
-}
-.status-planned {
-    background-color: var(--vp-c-brand-1); /* Primärfarbe für geplant/Idee */
-    border-color: var(--vp-c-brand-1);
+/* --- Status-Farbdefinitionen --- */
+
+.roadmap-item.done::before {
+    border-color: var(--vp-c-green-1); /* Grün */
+    background-color: var(--vp-c-green-1);
 }
 
-.timeline-content {
-    padding-left: 10px;
+.roadmap-item.wip::before {
+    border-color: var(--vp-c-yellow-1); /* Gelb/Orange */
+    background-color: var(--vp-c-yellow-1);
 }
 
-.timeline-date {
+.roadmap-item.planned::before,
+.roadmap-item.idea::before {
+    border-color: var(--vp-c-brand-1); /* Primärfarbe */
+    background-color: var(--vp-c-brand-1);
+}
+
+/* --- Inhalt-Styling --- */
+
+.item-date {
     display: block;
-    font-size: 0.85em;
-    color: var(--vp-c-text-2);
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--vp-c-brand-1);
     margin-bottom: 5px;
 }
 
-.event-title {
-    margin: 0;
-    line-height: 1.2;
-    font-size: 1.1em;
+.item-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
     border-bottom: none;
-}
-.event-status {
-    font-size: 0.9em;
-    color: var(--vp-c-text-3);
+    line-height: 1.2;
 }
 </style>
