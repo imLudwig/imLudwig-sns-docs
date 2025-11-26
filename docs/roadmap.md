@@ -8,8 +8,6 @@ title: Roadmap
 Dies ist der aktuelle Stand unserer geplanten und abgeschlossenen Features.
 
 <script setup>
-import { ref } from 'vue'
-
 // 1. Die zentrale Datenstruktur für die Timeline
 const timelineEvents = ref([
     { title: 'Projektstart und Basis-Setup', date: 'Q3 2025', status: 'Abgeschlossen' },
