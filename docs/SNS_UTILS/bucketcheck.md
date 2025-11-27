@@ -51,8 +51,9 @@ Um Aktionen auszulösen, sobald der Spieler den Bucket wechselt, sollte der **St
 -- Fängt Änderungen am State Bag Key "currentBucketId" ab
 AddStateBagChangeHandler("currentBucketId", nil, function(bagName, key, value) 
     local entity = GetEntityFromStateBagName(bagName)
+    print(tostring(entity) .. " befindet sich nun im Bucket" .. tostring(value))
     -- Whoops, we don't have a valid entity!
-    if entity == 0 then return end
+    if entity == 0 then return 
     -- We don't want to freeze the entity position if the entity collision hasn't loaded yet
     while not HasCollisionLoadedAroundEntity(entity) do
         -- The entity went out of our scope before the collision loaded
