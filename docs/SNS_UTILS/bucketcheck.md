@@ -33,7 +33,7 @@ Sie können den Wert direkt wie eine normale Lua-Variable auslesen.
 
 ```lua
 -- Dies funktioniert überall im Client-Skript (nachdem der Player initialisiert wurde)
-local currentBucket = LocalPlayer.state.currentBucketId
+local currentBucket = LocalPlayer.state.currentBucketId or 0
 
 -- Beispiel für die Abfrage:
 if currentBucket == 100 then
