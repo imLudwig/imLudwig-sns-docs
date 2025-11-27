@@ -4,20 +4,6 @@ Dieses Skript stellt Funktionen bereit, um die **Routing Bucket ID** eines Spiel
 
 ---
 
-Absolut, das ist **korrekt**\!
-
-Der State Bag, den wir implementiert haben (`player.state.currentBucketId`), ist auf dem Server jederzeit verfügbar und kann direkt ausgelesen werden. Dies ist eine **effiziente Alternative** zum Aufruf des `exports`.
-
-Hier ist der aktualisierte Abschnitt 1 der Dokumentation, der diese Option hinzufügt:
-
------
-
-# 📚 `bucketCheck` Dokumentation (Aktualisiert)
-
-Dieses Skript stellt Funktionen bereit, um die **Routing Bucket ID** eines Spielers abzurufen und synchronisiert diesen Wert über den State Bag.
-
------
-
 ## 1\. Serverseitig (Exports und State Bag 🌟)
 
 Der Bucket-Wert kann auf zwei Arten serverseitig abgerufen werden:
