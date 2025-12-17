@@ -12,7 +12,7 @@ shared_scripts {
 }
 ```
 
-::: danger
+::: danger ACHTUNG!
 Ohne die Definition von `Config.Debug` funktionieren die spezialisierten Debug-Prints nicht korrekt.
 :::
 
